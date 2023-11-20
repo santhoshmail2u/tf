@@ -1,5 +1,6 @@
 provider "azurerm" {
   features {}
+  use_oidc = true
 }
 
 terraform {
@@ -13,5 +14,7 @@ terraform {
       storage_account_name = "sarmatfstatestorage"
       container_name       = "mycontainer"
       key                  = "terraform.tfstate"
+      use_azuread_auth = true
+      use_oidc = true
   }
 }
