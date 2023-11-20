@@ -1,4 +1,4 @@
-name: Run Azure Login with OpenID Connect
+name: Terraform Plan & Apply pipeline
 on:
     push:
         branches:
@@ -19,7 +19,7 @@ env:
 
 jobs: 
   tf-plan:
-    name: 'Terraform Apply'
+    name: 'Terraform Plan'
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
@@ -45,7 +45,7 @@ jobs:
 
   tf-apply:
     if: github.ref == 'refs/heads/master'
-    name: 'Terraform Plan'
+    name: 'Terraform Apply'
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
