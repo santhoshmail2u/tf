@@ -19,7 +19,7 @@ env:
 
 jobs: 
   tf-plan:
-    name: 'Terraform Plan'
+    name: 'Terraform Apply'
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
