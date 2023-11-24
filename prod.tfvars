@@ -1,1 +1,0 @@
-rg-2-name = "prod_rg"
