@@ -1,9 +1,6 @@
-resource "azurerm_resource_group" "siri_name1" {
-  name     = var.siri_one
+resource "azurerm_resource_group" "siri_name" {
+  count = length(var.siri)
+  name     = var.siri[count.index]
   location = "East US"
 }
 
-resource "azurerm_resource_group" "siri_name2" {
-  name     = var.siri_two
-  location = "East US"
-}
