@@ -1,5 +1,5 @@
 variable "siri_sa" {
-  type = map(string)
+  type = map(any)
   default = {
     "Sa1" = {
       name  = "siridev_1"
@@ -10,7 +10,7 @@ variable "siri_sa" {
     }
     "Sa2" = {
       name  = "siridev_2"
-      rg_n  = "${dev_team}"
+      rg_n  = "dev_team"
       lcn   = "East US"
       a_t   = "Standard"
       a_r_t = "GRS"
