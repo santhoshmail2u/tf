@@ -2,14 +2,14 @@ variable "siri_sa" {
   type = map(any)
   default = {
     "Sa1" = {
-      name  = "siridev_1"
+      name  = "siridev1"
       rg_n  = "dev_team"
       lcn   = "East US"
       a_t   = "Standard"
       a_r_t = "GRS"
     }
     "Sa2" = {
-      name  = "siridev_2"
+      name  = "siridev2"
       rg_n  = "dev_team"
       lcn   = "East US"
       a_t   = "Standard"
@@ -17,6 +17,7 @@ variable "siri_sa" {
     }
   }
 }
+
 
 variable "cn_name1" {
 
