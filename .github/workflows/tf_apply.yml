@@ -19,7 +19,7 @@ jobs:
 
             - name: Run multiple lines
               run: |-
-                echo "Hello World"
+                echo "Hello World" > nag
                 echo "Hi"
                 ls
                 pwd
