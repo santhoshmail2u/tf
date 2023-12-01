@@ -1,0 +1,26 @@
+name: Nagarani pipeline
+
+on:
+    push:
+
+jobs:
+    job-1:
+        name: First job
+        runs-on: windows-latest
+        steps:
+            - name: print statement
+              run: dir
+    job-2:
+        name: second job
+        runs-on: ubuntu-latest
+        steps:
+            - name: print
+              run: echo "world"
+
+            - name: Run multiple lines
+              run: |-
+                echo "Hello World"
+                echo "Hi"
+                ls
+                pwd
+        
